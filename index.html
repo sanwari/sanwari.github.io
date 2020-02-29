@@ -1,6 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<style>
+			html {
+				scroll-behavior: smooth;
+			}
+
+			ol {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			nav {
+				position: sticky;
+				top: 2rem;
+				align-self: start;
+			}
+
+			.section-nav {
+			    margin-top: 2rem;
+			    padding-left: 0;
+			    border-right: 5px solid
+			#efefef;
+			}
+
+			.section-nav a {
+			    text-decoration: none;
+			    display: block;
+			    padding: .125rem 0;
+			    color: #ccc;
+			    transition: all 100ms ease-in-out;
+			}
+
+			.section-nav a:hover,
+			.section-nav a:focus {
+			    color: #666;
+			}
+
+			* {
+			    box-sizing: border-box;
+			}
+		</style>
+
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,23 +50,231 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-		<title>Sanwari, Website</title>
+		<title>How to play GBA Games!</title>
 	</head>
 	<body>
+		<div id="my-alert" class="alert alert-warning">
+			<strong>Warning!</strong> This webpage is for eductational purposes only!
+		</div>
+
 		<div class="container">
 			<div id="header">
 				<h1>How to Play Gameboy Advance Games on Your Computer</h1>
 				<h2>Sameer Anwari, CPSC 448</h2><br>
 			</div>
+
+			<div id="block-quote">
+				<blockquote cite="https://www.brainyquote.com/quotes/steven_wright_578856">It's like the wild west, the Internet. There are no rules. - Steven Wright
+				</blockquote><br><br>
+			</div>
+
 			<div class="row">
-				<div class="col-md-6" id ="left-side">
-					<h3>Left Side</h3>
+				<!-- Div for the tree for navigation -->
+				<div class="col-md-5" id ="left-side">
+					<h3>Navigation</h3>
+
+					<nav class="section-nav">
+						<ol>
+							<li style="margin-bottom: 25px"><a href="#introduction"><strong>Introduction</strong></a></li>
+							<li style="margin-bottom: 25px"><a href="#links"><strong>Links</strong></a></li>
+							<li style="margin-bottom: 25px"><a href="#instructions"><strong>Instructions</strong></a></li>
+								<ul style="list-style: none">
+									<li style="margin-bottom: 25px"><a href="#windows-os"><strong>Windows Operating System</strong></a></li>
+									<li style="margin-bottom: 25px"><a href="#mac-os"><strong>Mac Operating System</strong></a></li>
+								</ul>
+							<li style="margin-bottom: 25px"><a href="#getting-roms"><strong>Getting Roms</strong></a></li>
+							<li style="margin-bottom: 25px"><a href="#config-emulators"><strong>Configuring Emulators</strong></a></li>
+								<ul style="list-style: none">
+									<li style="margin-bottom: 25px"><a href="#config-mGBA"><strong>Configuring mGBA</strong></a></li>
+									<li style="margin-bottom: 25px"><a href="#config-VBA"><strong>Configuring VisualBoyAdvanced</strong></a></li>
+								</ul>
+							<li style="margin-bottom: 25px"><a href="#all-set"><strong>All Set</strong></a></li>
+						</ol>
+					</nav>
 				</div>
+				<!-- Div for the content of my page -->
 				<div class="col-md-6" id="right-side">
-					<h3>Introduction</h3>
 					<div id="introduction">
+						<h3>Introduction</h3>
+
 						<p>Welcome to my website! This website will help you get retro Gameboy Advanced games on your computer! Many people grew up playing the Gameboy Advance; It is a classic! By the end of this tutorial, hopefully you will be able to play all the beloved games from the Gameboy Advance!</p>
+
+						<p>If you aren't familliar with what we are doing, we are going to be emulating the Gameboy Advance system on our machines! Doing so will enable us to play "ROMs" or games that can be played on the Gameboy Advance!</p>
+
 					</div>
+
+					<div id="links">
+							<h4>Links:</h4>
+
+							<ul id="list-of-links">
+								<li><a href="http://www.emulator-zone.com/doc.php/gba/vboyadvance.html" target="_blank">Gameboy Advance Emulator for Windows</a></li>
+
+								<li><a href="https://mgba.io/downloads.html" target="_blank">Gameboy Advance Emulator for Mac OS</a></li>
+
+								<li><a href="https://romsmania.cc/roms/gameboy-advance" target="_blank">ROMS</a></li>
+							</ul>
+						</div>
+
+					<div id="instructions">
+						<h3>Instructions</h3>
+
+						<p> Depending on what type of computer you have the instructions will vary a little, overall though it is very easy! At the very bottom of this website,  I will have some links for my favorite ROM websites!</p>
+						
+						<div id="windows-os">
+							<h4>Windows Operating Systems</h4>
+
+							<div id="windows-step-one">
+								<h5>Step 1</h5>
+
+								<p>Visit the <a href="#links">"Gameboy Advance Emulators for Windows"</a> link.</p>
+							</div>
+
+							<div id="windows-step-two">
+								<h5>Step 2</h5>
+
+								<p>Scroll down on that page until you see <strong>"Visual Boy Advance 1.8.0 Beta3"</strong>. Click on it and download it".
+
+								<p>Once it is downloaded, extract the file called <strong>"VisualBoyAdvance.exe"</strong>. The icon for it should be a picture of a gameboy!</p>
+							</div>
+
+							<div id="windows-step-three">
+								<h5>Step 3</h5>
+
+								<p>That is it for installing the emulator on your Windows computer! Well, you didn't even really install anything! It is just an EXE file that you run!</p>
+
+								<p>One thing I believe you should do however is to create a new folder named GBA. Move <strong>"VisualBoyAdvanced.exe"</strong> into that folder, and within that folder create another folder called "ROMS".</p>
+
+								<p>You can now move onto downloading <a href="#getting-roms">ROMS</a> and playing them on your Windows computer!</p>
+							</div>
+						</div>
+						
+						<div id="mac-os">
+							<h4>Mac Operating Systems</h4>
+
+							<div id="mac-step-one">
+								<h5>Step 1</h5>
+
+								<p>Visit the <a href="#links">"Gameboy Advance Emulators for Mac OS and Linux OS"</a> link.
+							</div>
+
+							<div id="mac-step-two">
+								<h5>Step 2</h5>
+
+								<p>Once on that page, under where it says <strong>"Desktop OS"</strong>, click on <strong>"macOS"</strong>.
+
+								<p>Once it is downloaded, extract all the contents from this file. I would recommend that you create a new folder/directory named "GBA", and extract everything in there.</p>
+							</div>
+
+							<div id="mac-step-three">
+								<h5>Step 3</h5>
+
+								<p>Once everything is extracted, within the folder named <strong>"mGBA-0.8.1-osx"</strong>, there is a folder named <strong>"Applications"</strong>. Go into that folder, and in there will be the <strong>mGBA</strong> application!</p>
+
+								<p>You can now move onto downloading <a href="#getting-roms">ROMS</a> and playing them on your Mac Computer!</p>
+
+								<h6>NOTE:</h6>
+
+								<p>In order to run the mGBA application, you must enable it through your security preferences located under <strong>"System Preferences"</strong>.
+							</div>
+						</div>
+
+						<div id="getting-roms">
+							<h4>Getting ROMS</h4>
+
+							<div id="roms-step-one">
+								<h5>Step 1</h5>
+
+								<p>Visit the <a href="#links">"ROMS"</a> link.</p>
+							</div>
+
+							<div id="roms-step-two">
+								<h5>Step 2</h5>
+
+								<p>Search for the different games you would Like to download! If you can't make up your mind, here a few of my all time favorites!</p>
+
+								<h6>My Favorite Games:</h6>
+								<ul>
+									<li>Pokemon - Fire Red Version</li>
+									<li>Dragonball Z - Buu's Fury</li>
+									<li>Mario and Luigi - Superstar Saga</li>
+									<li>The Legend of Zelda - The Minish Cap</li>
+									<li>Super Mario World : Super Mario Advanced 2</li>
+								</ul>
+							</div>
+
+							<div id="roms-step-three">
+								<h5>Step 3</h5>
+								<h6>mGBA</h6>
+
+								<p>Once you are running mGBA, select <strong>"file"</strong> and then select <strong>"load rom"</strong>. Navigate to your desired downloaded rom, and it will now be running!</p>
+
+								<h6>VisualBoyAdvanced</h6>
+
+								<p>Once you are running VisualBoyAdvanced, select <strong>"file"</strong> and then select open. Navigate to your desired downloaded rom, and it will now be running!</p>
+							</div>
+						</div>
+
+						<div id="config-emulators">
+							<div id="config-mGBA">
+								<h3>Configuring mGBA</h3>
+
+								<div id="mGBA-keyboard-config">
+									<h4>mGBA Keyboard Configuration</h4>
+
+									<p>While mGBA is running, click on <strong>"mGBA"</strong> in the menubar and then click on <strong>"preferences"</strong>.</p>
+									
+									<p>In the side menu, click on <strong>"Keyboard"</strong>. in here you can map your keyboard to the controls for mGBA.</p>
+								</div>
+
+								<div id="mGBA-controller-config">
+									<h4>mGBA Controller Configuration</h4>
+
+									<p>mGBA also gives you the option to connect a controller! You can map the buttons from your controller to the controls for mGBA.</p>
+
+									<p>mGBA supports both Bluetooth Controllers as well as plug and play controllers!</p>
+
+									<p>The configuration page for controllers is under <strong>"Controller"</strong> in <strong>"Preferences"</strong>.</p>
+								</div>
+							</div>
+
+							<div id="config-VBA">
+								<h3>Configuring VisualBoyAdvanced</h3>
+
+								<div id="vba-keyboard-config">
+									<h4>VisualBoyAdvanced Keyboard Configuration</h4>
+
+									<p>While VisualBoyAdvanced is running, click on <strong>"options</strong> in the menubar. Then, hover over <strong>"joypad</strong>. After that, hover over <strong>"Configure"</strong> and click on <strong>"1"</strong>.</p>
+
+									<p>A form should pop up titled <strong>"Joypad configuration"</strong>. In here, you can map your keyboard to the controls for VisualBoyAdvanced.</p>
+
+									<p>One cool thing VisualBoyAdvanced has is the fact that you can configure multiple different key mappings! VisualBoyAdvanced gives you the option to configure up to 4 diffent key mappings!</p>
+								</div>
+							</div>
+						</div>
+
+						<div id="all-set">
+							<h3>You are now All Set!</h3>
+
+							<p>You are now all done! Your computer should now have the awesome ability to play Gameboy Advanced games! I hope that you feel as much love and nostalgia when playing these games as I do!</p>
+
+							<p>The Gameboy Advance will always have a special place in my heart, as well as inside the hearts of many others! Enjoy, and have fun gaming!</p>
+
+							<embed src="image1.jpg" alt="Screenshot of gameplay from Pokemon - Fire Red.">
+						</div>
+
+						<div id="Follow">
+							<h4>Follow me</h4>
+
+							<p>Feel free to follow my Instagram account!</p>
+
+							<p><strong>@ogafgoon</strong>
+						</div>
+
+						<div id="disclaimer">
+							<h6><strong>Disclaimer</strong></h6>
+
+							<p>This tutorial is for <strong>educational purposes</strong> only. In order to use any emulator you will need a copy of the <strong>Gameboy Advanced BIOS</strong> file. I will not provide it for you because that is illegal. If you want to get the Gameboy Advanced BIOS file, you will have to find it yourself.</p>
+						</div>
 				</div>
 			</div>
 		</div>
