@@ -1,12 +1,21 @@
-html {
+			html {
 				scroll-behavior: smooth;
 
+			}
+
+			body {
+				position: relative;
 			}
 
 			ol {
 				list-style: none;
 				margin: 0;
 				padding: 0;
+			}
+
+			ol li{
+				margin-bottom: 25px;
+				font-weight: bold;
 			}
 
 			nav {
